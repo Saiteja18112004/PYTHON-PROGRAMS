@@ -1,0 +1,12 @@
+# initializing list
+test_list = [1, 5, 6, 7, 4]
+
+# printing original list
+print("The original list is : " + str(test_list))
+
+# using list indexing
+# to get first element of list
+res = [test_list[0]]
+
+# printing result
+print("The first element of list are : " + str(res))
