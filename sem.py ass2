@@ -1,0 +1,44 @@
+def calculate_cgpa(semester_marks):
+    total_subjects = len(semester_marks)
+    total_points = sum(semester_marks)
+    cgpa = total_points / total_subjects
+    return cgpa
+
+def determine_grade(cgpa):
+    if cgpa == 10:
+        return "O"
+    elif cgpa >= 9:
+        return "A+"
+    elif cgpa >= 8:
+        return "A"
+    elif cgpa >= 7:
+        return "B"
+    elif cgpa >= 6:
+        return "C"
+    elif cgpa >= 5:
+        return "D"
+    elif cgpa >= 4:
+        return "P"
+    else:
+        return "F"
+
+def main():
+    semester_marks = []
+
+    # Input marks for each semester
+    for i in range(1, 7):
+        marks = float(input(f"Enter marks for Semester {i}: "))
+        semester_marks.append(marks)
+
+    # Calculate CGPA
+    cgpa = calculate_cgpa(semester_marks)
+
+    # Determine overall grade
+    grade = determine_grade(cgpa)
+
+    # Display result
+    print(f"\nCGPA: {cgpa:.2f}")
+    print("Result:", grade)
+
+if __name__ == "__main__":
+    main()
