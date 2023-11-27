@@ -1,0 +1,21 @@
+def diagonalSum(mat):
+    n = len(mat)
+    primary_diagonal_sum = sum(mat[i][i] for i in range(n))
+    secondary_diagonal_sum = sum(mat[i][n - 1 - i] for i in range(n))
+    
+    # Exclude the common element if the matrix has an odd size
+    if n % 2 == 1:
+        common_element = mat[n // 2][n // 2]
+        return primary_diagonal_sum + secondary_diagonal_sum - common_element
+    else:
+        return primary_diagonal_sum + secondary_diagonal_sum
+
+# Example usage:
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+result = diagonalSum(matrix)
+print(result)
