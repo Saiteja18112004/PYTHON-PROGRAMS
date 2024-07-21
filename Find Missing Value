@@ -7,6 +7,6 @@ Find Missing Value in a List
 list=[1,2,3,5]
 n=len(list)+1
 o_sum=n*(n+1)/2  #Original Sum Value
-e_sum=sum(list)  #Existence Sum Value
+e_sum=sum(list)  #Existed Sum Value
 m_num=int(o_sum - e_sum)  #Missing Value
 print(m_num)
