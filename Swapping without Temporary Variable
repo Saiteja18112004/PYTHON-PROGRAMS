@@ -1,0 +1,10 @@
+'''
+Swapping - It is the process of exchanging the values of two variables.
+'''
+
+a=int(input())
+b=int(input())
+a=a+b
+b=a-b
+a=a-b
+print(a,b,end=" ")
