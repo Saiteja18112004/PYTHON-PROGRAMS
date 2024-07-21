@@ -1,0 +1,8 @@
+'''
+String Reversal - It is a string obtained by reversing the order of its characters.
+=> input = Hello
+=> output = olleH
+'''
+
+n=input()
+print(n[::-1])
