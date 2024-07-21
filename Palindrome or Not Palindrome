@@ -1,0 +1,11 @@
+'''
+Palindrome - It is a word, phrase, or number that reads the same forward and backward.
+=> input = malayalam
+=> output = It is palindrome
+'''
+
+n = input()
+if n == n[::-1]:
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
