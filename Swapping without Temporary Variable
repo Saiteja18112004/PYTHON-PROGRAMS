@@ -1,5 +1,7 @@
 '''
 Swapping - It is the process of exchanging the values of two variables.
+=> Input = 5,6
+=> Output = 6,5
 '''
 
 a=int(input())
