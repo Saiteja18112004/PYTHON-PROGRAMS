@@ -1,0 +1,18 @@
+'''
+Prime Number - It is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+=> input = 5
+=> output = It is Prime
+
+=> input 6
+=> Output = It is not prime
+'''
+
+n=int(input())
+c=0
+for i in range(1,n+1):
+     if n%i==0:
+         c=c+1
+if(c==2):
+    print("It is prime")
+else:
+    print("It is not prime")
