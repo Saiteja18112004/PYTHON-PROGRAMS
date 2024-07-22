@@ -1,0 +1,16 @@
+'''
+Even Number - The Numbers which are divisible by 2 and remainder is 0.
+Odd Number - the Numbers which are not divisble by 2 and remainder is not 0.
+
+=> Input = 2
+=> Output = It is Even
+
+=> Input = 3
+=> Output = It is Odd
+'''
+
+n=int(input())
+if n%2==0:
+    print("It is Even Number")
+else:
+    print("It is Odd Number")
