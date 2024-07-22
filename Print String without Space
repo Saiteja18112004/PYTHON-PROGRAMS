@@ -1,0 +1,12 @@
+'''
+Print the String without spaces / Remove Spaces - Take input String with spaces & remove them in output
+=> Input  - This is my pen
+=> Output - Thisismypen
+'''
+
+old_text=input()
+new_text=""
+for char in old_text:
+    if char!=" ":
+        new_text=new_text+char
+print(new_text)
