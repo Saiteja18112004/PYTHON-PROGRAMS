@@ -1,0 +1,13 @@
+'''
+Find Vowels in given String
+=> Input = I am Sai Teja
+=> Output = ['I', 'a', 'a', 'i', 'e', 'a']
+'''
+
+text="I am Sai Teja"
+vowel="aeiouAEIOU"
+find_vowel=[]
+for char in text:
+    if char in vowel:
+        find_vowel.append(char)
+print(find_vowel)
