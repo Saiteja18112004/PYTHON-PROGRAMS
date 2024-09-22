@@ -1,0 +1,17 @@
+'''
+Find Second maximum element in the given array
+=> input = 11 26 39 44 56
+=> output = 44
+
+'''
+
+arr=list(map(int,input().split()))
+max=0
+max2=0
+for i in arr:
+    if i>max:
+        max=i
+for i in arr:
+    if i<max and i>max2:
+        max2=i
+print(max2)
