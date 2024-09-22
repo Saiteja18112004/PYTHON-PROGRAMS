@@ -1,0 +1,13 @@
+'''
+Find maximum element in the given array
+=> input = 11 22 33 44 56
+=> output = 56
+
+'''
+
+arr=list(map(int,input().split()))
+max=0
+for i in arr:
+    if i>max:
+        max=i
+print(max)
